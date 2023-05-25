@@ -32,7 +32,7 @@ Authorization: Token 0f26fac377aa341af308cac5ea2fe6f1544eb5cb
 ###
 
 # фильтрация по создателю
-GET {{baseUrl}}/advertisements/?creator=3
+GET {{baseUrl}}/advertisements/?creator=1
 Content-Type: application/json
 
 ###
@@ -44,6 +44,6 @@ Content-Type: application/json
 ###
 
 #DELETE
-DELETE {{baseUrl}}/advertisements/1
+DELETE {{baseUrl}}/advertisements/3
 Content-Type: application/json
 Authorization: Token 0f26fac377aa341af308cac5ea2fe6f1544eb5cb

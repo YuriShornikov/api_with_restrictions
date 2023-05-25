@@ -92,7 +92,7 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
         'USER': 'postgres',
-        'PASSWORD': ''
+        'PASSWORD': 'Irregularlypost'
     }
 }
 
@@ -138,9 +138,9 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKEND': [
-        'django.filters.rest_framework.DjangoFilterBackend'
-    ],
+    # 'DEFAULT_FILTER_BACKEND': [
+    #     'django.filters.rest_framework.DjangoFilterBackend'
+    # ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication'
     ],
