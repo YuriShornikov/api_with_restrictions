@@ -38,6 +38,7 @@ class AdvertisementSerializer(serializers.ModelSerializer):
         return super().create(validated_data)
 
     def validate(self, data):
+        if self.initial_data.get('status') == 'OPEN' or
 
         """Метод для валидации. Вызывается при создании и обновлении."""
 
