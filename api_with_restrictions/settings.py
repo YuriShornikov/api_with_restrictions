@@ -92,7 +92,7 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
         'USER': 'postgres',
-        'PASSWORD': 'Irregularlypost'
+        'PASSWORD': ''
     }
 }
 
@@ -148,5 +148,6 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_RATES': {
         'user': '10/minute',
         'anon': '2/minute',
-    }
+    },
+    'NON_FIELD_ERRORS_KEY': 'error',
 }
