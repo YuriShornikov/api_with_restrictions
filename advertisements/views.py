@@ -2,7 +2,7 @@
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.throttling import UserRateThrottle
+from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 from rest_framework.viewsets import ModelViewSet
 
 from advertisements.filters import AdvertisementFilter
@@ -21,7 +21,7 @@ class AdvertisementViewSet(ModelViewSet):
     filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_class = AdvertisementFilter
 
-    throttle_classes = [UserRateThrottle]
+    throttle_classes = [UserRateThrottle, AnonRateThrottle]
 
     permission_classes = [IsAuthenticated, IsOwnerOrReadOnly]
 
